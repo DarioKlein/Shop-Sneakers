@@ -9,13 +9,14 @@ const Nav = styled.nav`
   min-height: 8rem;
   padding: 0 6rem;
   background-color: rgb(221, 200, 10);
+  overflow: hidden;
 `
 
 
 function Navbar() {
   return (
     <Nav>
-      <LogoTipo cor="#ffffff" size="3.5rem"></LogoTipo>
+      <LogoTipo></LogoTipo>
       <NavLinks></NavLinks>
     </Nav>
   )

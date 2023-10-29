@@ -13,8 +13,8 @@ const LinksNav = styled.ul`
 const Ahref = styled.a`
   color: white;
   text-decoration: none;
-  font-size: 2rem;
-  text-shadow: 0.2rem 0.2rem black;
+  font-size: 1.8rem;
+  text-shadow: 0.2rem 0.2rem 0.2rem black;
   transition: color 0.2s ease-in-out;
   position: relative;
   font-family: "Poppins", sans-serif;
@@ -25,20 +25,22 @@ const Ahref = styled.a`
   }
 
   &:hover:after {
-    width: 100%;
-    left: 0;
+    bottom: -2.65rem;
   }
 
   &:after {
     content: "";
-    width: 0;
+    width: 100%;
     position: absolute;
-    height: 0.4rem;
-    left: 50%;
-    bottom: -0.7rem;
+    height: 0.6rem;
+    left: 0;
+    bottom: -3.5rem;
     background: purple;
-    border-radius: 1rem;
     transition: all 0.2s ease-in-out;
+  }
+
+  @media (max-width: 1000px) {
+    font-size: 1.5rem;
   }
 `
 
