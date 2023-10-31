@@ -3,6 +3,10 @@ import logoSVG from "../assets/logo.svg"
 
 const ImgLogo = styled.img`
   width: 10rem;
+
+  @media (max-width: 500px) {
+    width: 8.5rem;
+  }
 `
 
 const Logotipo = styled.div`
